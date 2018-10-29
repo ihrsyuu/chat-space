@@ -23,6 +23,18 @@
 - has_many :members
 - has_many :messages
 
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|text|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
+
+### Association
+- has_many :members
+- has_many :messages
+
 ## membersテーブル
 
 |Column|Type|Options|
