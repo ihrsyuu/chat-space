@@ -13,6 +13,16 @@
 - belongs_to :group
 - belongs_to :user
 
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+
+### Association
+- has_many :members
+- has_many :messages
+
 ## membersテーブル
 
 |Column|Type|Options|
