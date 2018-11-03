@@ -21,4 +21,20 @@ height: 100%;
     font-weight: bold;
     }
   }
+  .sideblock--group {
+  background--color: #2f3e51;
+  padding-left: 20px;
+  height: 71px;
+    .sideblock--group--groupname {
+    color: #FFFFFF;
+    font-size: 15px;
+    padding-top: 20px;
+    }
+    .sideblock--group--message {
+    color: #FFFFFF;
+    font-size: 11px;
+    padding-top: 5px;
+    }
+
+  }
 }
