@@ -90,7 +90,33 @@ height: 100%;
       }
     }
   }
+  .mainblock--form {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: calc(100vw - 380px);
+  height: 50px;
+    .mainblock--form--textarea {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: calc(100vw - 495px);
+    float: left;
+    line-height: 50px;
+      p {
 
+      }
+    }
+    .mainblock--form--button {
+    background-color: #39AEF0;
+    text-align: center;
+    height: 100%;
+    line-height:50px;
+    width: 100px;
+    float: right;
+      p {
+      color: #FFFFFF;
+      }
+    }
+  }
 }
 
 
