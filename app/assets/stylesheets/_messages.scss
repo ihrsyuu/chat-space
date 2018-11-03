@@ -50,6 +50,15 @@ height: 100%;
   background-color: #FFFFFF;
   height: 100px;
   padding:0 40px 0 40px;
+    .mainblock--group_name--editbutton {
+    float: right;
+    margin-top: 28px;
+    padding: 0 20px;
+    border: solid #39AEF0;
+    height: 40px;
+    line-height: 40px;
+    color: #39AEF0;
+    }
     .mainblock--group_name--groupname {
     color: #333333;
     font-size: 20px;
