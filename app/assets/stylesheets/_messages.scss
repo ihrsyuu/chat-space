@@ -10,4 +10,15 @@ text-align: center;
 background-color: #2f3e51;
 width: 300px;
 height: 100%;
+  .sideblock--info {
+  background-color: #253141;
+  height: 100px;
+  line-height: 100px;
+  padding-left: 20px;
+    p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    }
+  }
 }
