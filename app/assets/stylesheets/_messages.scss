@@ -61,8 +61,37 @@ height: 100%;
     padding-top: 15px;
     }
   }
-}
+  .mainblock--chats {
+  border: solid #eeeeee;
+  background-color: #FAFAFA;
+  height: calc(100% - 190px);
+    .mainblock--chats--kuuhaku {
+    height: 46px;
+    }
+    .mainblock--chats--chat {
+    padding:0 40px 0 40px;
+      .mainblock--chats--chat--nickname {
+      font-size: 16px;
+      color: #434A54;
+      font-weight: bold;
+      float: left;
+      margin-right: 10px;
+      }
+      .mainblock--chats--chat--date {
+      font-size: 12px;
+      color: #999999;
+      }
+      .mainblock--chats--chat--message {
+      font-size: 14px;
+      color: #434A54;
+      padding-top: 10px;
+      padding-bottom: 40px;
+      clear: both;
+      }
+    }
+  }
 
+}
 
 
 
