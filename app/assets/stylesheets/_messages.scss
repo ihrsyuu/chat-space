@@ -1,9 +1,9 @@
 html, body { height: 100%; }
 
 .header {
-background: #38AEF0;
+background: $light_blue;
 text-align: center;
-color: white;
+color: $white;
 height: 30px;
 line-height: 30px;
 }
@@ -18,14 +18,14 @@ height: calc(100% - 30px);
   height: 100px;
   line-height: 100px;
   padding: 0 20px 0 20px;
+  color: $white;
     p {
-    color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
     }
     .icon {
+    color: $white;
     float: right;
-    color: #FFFFFF;
     padding-left: 10px;
     line-height: 100px;
     }
@@ -34,13 +34,12 @@ height: calc(100% - 30px);
   background-color: #2f3e51;
   padding: 0 20px 0 20px;
   height: 71px;
+  color: $white;
     &__groupname {
-    color: #FFFFFF;
     font-size: 15px;
     padding-top: 20px;
     }
     &__message {
-    color: #FFFFFF;
     font-size: 11px;
     padding-top: 5px;
     }
@@ -53,14 +52,14 @@ background-color: #AAAAAA;
 width: calc(100vw - 300px);
 height: calc(100% - 30px);
   &__group_name {
-  background-color: #FFFFFF;
+  background-color: $white;
   height: 100px;
   padding:0 40px 0 40px;
     &__editbutton {
     float: right;
     margin-top: 28px;
     padding: 0 20px;
-    border: solid #39AEF0;
+    border: solid $light_blue;
     height: 40px;
     line-height: 40px;
     color: #39AEF0;
@@ -85,9 +84,9 @@ height: calc(100% - 30px);
     }
     &__chat {
     padding:0 40px 0 40px;
+    color: #434A54;
       &__nickname {
       font-size: 16px;
-      color: #434A54;
       font-weight: bold;
       float: left;
       margin-right: 10px;
@@ -98,7 +97,6 @@ height: calc(100% - 30px);
       }
       &__message {
       font-size: 14px;
-      color: #434A54;
       padding-top: 10px;
       padding-bottom: 40px;
       clear: both;
@@ -118,7 +116,7 @@ height: calc(100% - 30px);
       width: calc(100% - 160px);
     }
     &__mask {
-      background-color: #FFFFFF;
+      background-color: $white;
       float: left;
       height: 50px;
       padding-right: 10px;
@@ -131,9 +129,9 @@ height: calc(100% - 30px);
       }
     }
     &__submit {
-      background-color: #38AEF0;
+      background-color: $light_blue;
       border: none;
-      color: #FFFFFF;
+      color: $white;
       float: right;
       font-size: 16px;
       height: 50px;
