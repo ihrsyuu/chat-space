@@ -4,14 +4,16 @@
 = render 'sideblock'
 
 .mainblock
-  .mainblock__group_name
+  .mainblock__groupname
     = link_to do
-      .mainblock__group_name__editbutton
+      .mainblock__groupname__editbutton
         %p  Edit
-    .mainblock__group_name__groupname
+    .mainblock__groupname__groupname
       %p  groupname
-    .mainblock__group_name__membername
-      %p  Member
+    %ul.mainblock__groupname__members
+      Member :
+      %li.member
+        name
   .mainblock__chats
     .mainblock__chats__kuuhaku
     .mainblock__chats__chat
