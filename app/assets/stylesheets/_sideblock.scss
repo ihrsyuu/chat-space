@@ -1,0 +1,37 @@
+.sideblock {
+float: left;
+background-color: #2f3e51;
+width: 300px;
+height: calc(100% - 30px);
+  &__info {
+  background-color: #253141;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 20px 0 20px;
+  color: $white;
+    p {
+    font-size: 16px;
+    font-weight: bold;
+    }
+    .icon {
+    color: $white;
+    float: right;
+    padding-left: 10px;
+    line-height: 100px;
+    }
+  }
+  &__group {
+  background-color: #2f3e51;
+  padding: 0 20px 0 20px;
+  height: 71px;
+  color: $white;
+    &__groupname {
+    font-size: 15px;
+    padding-top: 20px;
+    }
+    &__message {
+    font-size: 11px;
+    padding-top: 5px;
+    }
+  }
+}
