@@ -1,18 +1,10 @@
 html,body { height:100%; }
 
-.header {
-background: $light_blue;
-text-align: center;
-color: $white;
-height: 30px;
-line-height: 30px;
-}
-
 .mainblock {
 float: right;
 background-color: #AAAAAA;
 width: calc(100vw - 300px);
-height: calc(100% - 30px);
+height: 100%;
   &__groupname {
   background-color: $white;
   height: 100px;
