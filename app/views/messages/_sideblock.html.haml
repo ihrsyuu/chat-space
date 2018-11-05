@@ -6,10 +6,10 @@
       = fa_icon 'cog', class: 'icon'
     .nickname
       = current_user.name
+  - current_user.groups.each do |group|
   .sideblock__group
-    - current_user.groups.each do |group|
-      = link_to group_messages_path(group) do
-        .sideblock__group__groupname
-          = group.name
-        .sideblock__group__message
-          メッセージはまだありません。
+    = link_to group_messages_path(group) do
+      .sideblock__group__groupname
+        = group.name
+      .sideblock__group__message
+        メッセージはまだありません。
