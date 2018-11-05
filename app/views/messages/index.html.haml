@@ -3,7 +3,7 @@
 
 .mainblock
   .mainblock__groupname
-    = link_to edit_group_path do
+    = link_to edit_group_path(params[:group_id]) do
       .mainblock__groupname__editbutton
         %p  Edit
     .mainblock__groupname__groupname
