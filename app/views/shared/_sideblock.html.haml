@@ -7,9 +7,7 @@
     .nickname
       = current_user.name
   .sideblock__group
-    - current_user.groups.each do |group|
-      = link_to group_messages_path(group) do
-        .sideblock__group__groupname
-          = group.name
-        .sideblock__group__message
-          メッセージはまだありません。
+    .sideblock__group__groupname
+      %p  groupname
+    .sideblock__group__message
+      %p  message
