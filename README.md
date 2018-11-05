@@ -37,7 +37,7 @@
 - has_many :members
 - has_many :messages
 
-## membersテーブル
+## group_userテーブル
 
 |Column|Type|Options|
 |------|----|-------|
