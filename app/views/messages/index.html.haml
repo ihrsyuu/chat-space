@@ -12,20 +12,17 @@
       Member :
       %li.member
         name
+
   .mainblock__chats
     .mainblock__chats__kuuhaku
-    .mainblock__chats__chat
-      .mainblock__chats__chat__nickname
-        %p  nickname
-      .mainblock__chats__chat__date
-        %p  2000/00/00 00:00:00
-      .mainblock__chats__chat__message
-        %p  message
+    = render partial: 'message', collection: @messages
+
   .mainblock__form
-    %form
-      %input.mainblock__form__message
-      .mainblock__form__mask
-        %label.mainblock__form__mask__image
-          = fa_icon 'picture-o', class: 'icon'
-          %input.hidden{type: 'file'}
-      %input.mainblock__form__submit{type: 'submit', value: 'Send'}
+    .form
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'mainblock__form__message', placeholder: 'type a message'
+        .mainblock__form__mask
+          = f.label :image, class: 'mainblock__form__mask__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden'
+        =f.submit 'Send', class: 'mainblock__form__submit'
