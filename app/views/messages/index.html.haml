@@ -7,11 +7,12 @@
       .mainblock__groupname__editbutton
         %p  Edit
     .mainblock__groupname__groupname
-      %p @group.name
+      = @group.name
     %ul.mainblock__groupname__members
       Member :
       %li.member
-        name
+        - @users.each do |user|
+          = user.name
 
   .mainblock__chats
     .mainblock__chats__kuuhaku
