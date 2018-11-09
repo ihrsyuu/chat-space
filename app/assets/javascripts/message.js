@@ -8,10 +8,12 @@ $(function(){
                   if(message.image !== null){html = $(html).append(`<div class="mainblock__chats__chat__image"><img src =${message.image}></div>`)}
                `</div>`
     return html;
+
   }
   function scroll() {
     $('.mainblock__chats').animate({scrollTop: $('.height')[0].scrollHeight},0);
   }
+
   $('#js-form').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
