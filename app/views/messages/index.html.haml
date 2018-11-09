@@ -20,7 +20,7 @@
 
   .mainblock__form
     .form
-      = form_for [@group, @message] do |f|
+      = form_for [@group, @message], html: { id: "js-form" } do |f|
         = f.text_field :content, class: 'mainblock__form__message', placeholder: 'type a message'
         .mainblock__form__mask
           = f.label :image, class: 'mainblock__form__mask__image' do
