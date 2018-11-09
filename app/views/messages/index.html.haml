@@ -15,8 +15,9 @@
           = user.name
 
   .mainblock__chats
-    .mainblock__chats__kuuhaku
-    = render partial: 'message', collection: @messages
+    .height
+      .mainblock__chats__kuuhaku
+      = render partial: 'message', collection: @messages
 
   .mainblock__form
     .form
