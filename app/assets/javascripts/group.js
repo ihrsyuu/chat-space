@@ -15,8 +15,8 @@ $(function() {
     search_list.append(html);
   }
 
-  $("#user-search-field").on("keyup", function() {
-    var input = $("#user-search-field").val();
+  $("#group_チャットメンバーを追加").on("keyup", function() {
+    var input = $("#group_チャットメンバーを追加").val();
 
     if(input!==""){
       $.ajax({
