@@ -39,6 +39,10 @@ function appendNoUser(text) {
         appendNoUser("一致する名前はありません");
       }
     })
+    .fail(function() {
+      alert('ユーザー検索に失敗しました');
+    })
   }
   });
+
 });
