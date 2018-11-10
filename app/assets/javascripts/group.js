@@ -33,8 +33,7 @@ $(function() {
             var html = appendUser(user);
             $("#user-search-result").append(html);
           });
-        }
-        else {
+        } else {
           appendNoUser("一致する名前はありません");
         }
       })
