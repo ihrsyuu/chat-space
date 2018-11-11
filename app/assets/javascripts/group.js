@@ -1,6 +1,8 @@
 $(function() {
 
   var search_list = $("#user-search-result");
+  var search_list_add = $("#chat-group-users");
+
 
   function appendUser(user) {
     var html = `<div class="chat-group-user clearfix">
@@ -42,8 +44,6 @@ $(function() {
       })
     }
   });
-
-  var search_list_add = $("#chat-group-users");
 
   function appendUserNameAdd(user_name, user_id) {
      var html =`<div class='chat-group-user clearfix js-chat-member' id='chat-group-user-8'>
