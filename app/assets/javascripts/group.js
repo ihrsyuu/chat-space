@@ -3,7 +3,6 @@ $(function() {
   var search_list = $("#user-search-result");
   var search_list_add = $("#chat-group-users");
 
-
   function appendUser(user) {
     var html = `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">${ user.name }</p>
