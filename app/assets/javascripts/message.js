@@ -45,9 +45,12 @@ $(function(){
       url: location.href.json,
     })
     .done(function(json) {
+      var id = $('.mainblock__chats__chat').data('messageId');
       var insertHTML = '';
       json.messages.forEach(function(message) {
-        insertHTML += buildHTML(message);
+        if (message.id > id ) {
+          insertHTML += buildHTML(message);
+        }
       });
       $('.chat-wrapper').append(insertHTML);
     })
