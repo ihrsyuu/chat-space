@@ -23,8 +23,8 @@
     .chat-group-form__field--right
       #chat-group-users
         - group.users.each do |user|
-          .chat-group-user.clearfix#chat-group-user-22
-            %input{name: 'group[user_ids][]', type: 'hidden', value: '#{user.id}'}
+          .chat-group-user.clearfix
+            %input{name: 'group[user_ids][]', type: 'hidden', value: "#{user.id}"}
             %p.chat-group-user__name
               #{user.name}
             %a.user-search-remove.chat-group-user__btn.chat-group-user__btn--remove.js-remove-btn
