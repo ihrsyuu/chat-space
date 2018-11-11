@@ -16,8 +16,8 @@ $(function() {
     search_list.append(html);
   }
 
-  $("#group_AddToChatmembers").on("keyup", function() {
-    var input = $("#group_AddToChatmembers").val();
+  $("#group_users").on("keyup", function() {
+    var input = $("#group_users").val();
 
     if(input!==""){
       $.ajax({
