@@ -40,7 +40,8 @@ $(function(){
     })
   });
 
-  setInterval(function() {
+var interval = setInterval(function() {
+  if (window.location.href.match(/\/groups\/\d+\/messages/)) {
     $.ajax({
       url: location.href.json,
     })
@@ -57,7 +58,9 @@ $(function(){
     .fail(function(data) {
       alert('自動更新に失敗しました');
     });
-  });
+  } else {
+    clearInterval(interval);
+   }} , 5000 );
 
 });
 
