@@ -16,8 +16,8 @@ $(function() {
     search_list.append(html);
   }
 
-  $("#group_チャットメンバーを追加").on("keyup", function() {
-    var input = $("#group_チャットメンバーを追加").val();
+  $("#group_AddToChatmembers").on("keyup", function() {
+    var input = $("#group_AddToChatmembers").val();
 
     if(input!==""){
       $.ajax({
