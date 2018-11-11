@@ -3,12 +3,12 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
+    @users = @group.users
     @messages = @group.messages.order(created_at: :DESC).includes(:user)
     respond_to do |format|
       format.html
       format.json
     end
-    @users = @group.users
 
   end
 

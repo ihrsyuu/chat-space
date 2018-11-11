@@ -17,7 +17,8 @@
   .mainblock__chats
     .height
       .mainblock__chats__kuuhaku
-      = render partial: 'message', collection: @messages
+      .chat_wrapper
+        = render partial: 'message', collection: @messages
 
   .mainblock__form
     .form
