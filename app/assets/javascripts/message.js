@@ -63,9 +63,3 @@ var interval = setInterval(function() {
    }} , 5000 );
 
 });
-
-
-
-
-
-
