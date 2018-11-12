@@ -42,11 +42,11 @@ $(function(){
 
 var interval = setInterval(function() {
   if (window.location.href.match(/\/groups\/\d+\/messages/)) {
-    var id = $('.mainblock__chats__chat').last().data('messageId');
+    var lastMessageId = $('.mainblock__chats__chat:last').data('messageId');
     $.ajax({
       url: location.href,
       type: "GET",
-      data: {id: id},
+      data: {id: lastMessageId},
       dataType: "json"
     })
     .done(function(data) {
