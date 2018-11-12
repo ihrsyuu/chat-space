@@ -42,18 +42,19 @@ $(function(){
 
 var interval = setInterval(function() {
   if (window.location.href.match(/\/groups\/\d+\/messages/)) {
+    var id = $('.mainblock__chats__chat').last().data('messageId');
     $.ajax({
-      url: location.href.json,
+      url: location.href,
+      type: "GET",
+      data: {id: id},
+      dataType: "json"
     })
-    .done(function(json) {
-      var id = $('.mainblock__chats__chat').data('messageId');
-      var insertHTML = '';
-      json.messages.forEach(function(message) {
-        if (message.id > id ) {
-          insertHTML += buildHTML(message);
-        }
-      });
-      $('.chat-wrapper').append(insertHTML);
+    .done(function(data) {
+      data.forEach(function(message) {
+      var html = buildHTML(message);
+      $('.height').append(html);
+      scroll()
+      })
     })
     .fail(function(data) {
       alert('自動更新に失敗しました');
