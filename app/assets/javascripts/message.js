@@ -40,4 +40,27 @@ $(function(){
     })
   });
 
+var interval = setInterval(function() {
+  if (window.location.href.match(/\/groups\/\d+\/messages/)) {
+    var lastMessageId = $('.mainblock__chats__chat:last').data('messageId');
+    $.ajax({
+      url: location.href,
+      type: "GET",
+      data: {id: lastMessageId},
+      dataType: "json"
+    })
+    .done(function(data) {
+      data.forEach(function(message) {
+      var html = buildHTML(message);
+      $('.height').append(html);
+      scroll()
+      })
+    })
+    .fail(function(data) {
+      alert('自動更新に失敗しました');
+    });
+  } else {
+    clearInterval(interval);
+   }} , 5000 );
+
 });

@@ -11,13 +11,13 @@
     %ul.mainblock__groupname__members
       Member :
       %li.member
-        - @users.each do |user|
+        - @group.users.each do |user|
           = user.name
 
   .mainblock__chats
     .height
       .mainblock__chats__kuuhaku
-      = render partial: 'message', collection: @messages
+        = render partial: 'message', collection: @messages
 
   .mainblock__form
     .form
