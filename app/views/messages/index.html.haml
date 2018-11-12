@@ -11,7 +11,7 @@
     %ul.mainblock__groupname__members
       Member :
       %li.member
-        - @users.each do |user|
+        - @group.users.each do |user|
           = user.name
 
   .mainblock__chats

@@ -3,7 +3,6 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
-    @users = @group.users
     @messages = @group.messages.includes(:user)
     respond_to do |format|
       format.html
