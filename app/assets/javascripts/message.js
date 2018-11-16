@@ -1,4 +1,5 @@
 $(function(){
+$(document).on('turbolinks:load', function() {
 
   function buildHTML(message){
     var html = `<div class="mainblock__chats__chat">
@@ -63,4 +64,6 @@ var interval = setInterval(function() {
     clearInterval(interval);
    }} , 5000 );
 
+})
 });
+
