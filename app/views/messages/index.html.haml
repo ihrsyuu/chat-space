@@ -11,16 +11,17 @@
     %ul.mainblock__groupname__members
       Member :
       %li.member
-        - @users.each do |user|
+        - @group.users.each do |user|
           = user.name
 
   .mainblock__chats
-    .mainblock__chats__kuuhaku
-    = render partial: 'message', collection: @messages
+    .height
+      .mainblock__chats__kuuhaku
+      = render partial: 'message', collection: @messages
 
   .mainblock__form
     .form
-      = form_for [@group, @message] do |f|
+      = form_for [@group, @message], html: { id: "js-form" } do |f|
         = f.text_field :content, class: 'mainblock__form__message', placeholder: 'type a message'
         .mainblock__form__mask
           = f.label :image, class: 'mainblock__form__mask__image' do
