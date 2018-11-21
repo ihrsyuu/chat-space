@@ -1,7 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
-server '13.113.218.134', port: 22, roles: [:app, :web, :db], primary:true
 set :application, "chat-space"
 set :repo_url, "git@example.com:ihrsyuu/chat-space.git"
 
