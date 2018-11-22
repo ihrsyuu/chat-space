@@ -1,4 +1,5 @@
 $(function() {
+$(document).on('turbolinks:load', function() {
 
   var search_list = $("#user-search-result");
   var search_list_add = $("#chat-group-users");
@@ -64,4 +65,5 @@ $(function() {
     $(this).parent().remove();
   });
 
+})
 });
